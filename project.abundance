@@ -17,9 +17,45 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.07776321537789427,
+      "y": 0.18718381112984822,
+      "uniqueID": "id-6",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 40,
+          "currentEquation": "40"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.11882918304936653,
+      "y": 0.6475548060708264,
+      "uniqueID": "id-9",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 20,
+          "currentEquation": "20"
+        }
+      ]
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-6",
+      "ap2ID": "id-9"
+    }
+  ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
