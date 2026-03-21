@@ -47,6 +47,83 @@
           "currentEquation": "20"
         }
       ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.24945391000436876,
+      "y": 0.7234401349072513,
+      "uniqueID": "id-13",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 36,
+          "currentEquation": "36"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.24552206203582352,
+      "y": 0.48566610455311976,
+      "uniqueID": "id-16",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 2,
+          "currentEquation": "2"
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.37920489296636084,
+      "y": 0.5952782462057336,
+      "uniqueID": "id-32",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "geometry2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.3503713411970293,
+      "y": 0.8279932546374368,
+      "uniqueID": "id-40",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 20,
+          "currentEquation": "20"
+        }
+      ]
+    },
+    {
+      "atomType": "Box",
+      "x": 0.37396242900830057,
+      "y": 0.8263069139966273,
+      "uniqueID": "id-46"
     }
   ],
   "allConnectors": [
@@ -54,7 +131,28 @@
       "ap2Name": "geometry",
       "ap1ID": "id-6",
       "ap2ID": "id-9"
-    }
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-9",
+      "ap2ID": "id-32"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-13",
+      "ap2ID": "id-16"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-13",
+      "ap2ID": "id-40"
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-16",
+      "ap2ID": "id-32"
+    },
+    null
   ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
