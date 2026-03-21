@@ -26,8 +26,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 40,
-          "currentEquation": "40"
+          "ioValue": 40
         }
       ]
     },
@@ -43,8 +42,7 @@
         },
         {
           "name": "height",
-          "ioValue": 20,
-          "currentEquation": "20"
+          "ioValue": 20
         }
       ]
     },
@@ -56,8 +54,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 36,
-          "currentEquation": "36"
+          "ioValue": 36
         }
       ]
     },
@@ -81,8 +78,7 @@
         },
         {
           "name": "zDist",
-          "ioValue": 2,
-          "currentEquation": "2"
+          "ioValue": 2
         }
       ]
     },
@@ -114,16 +110,39 @@
         },
         {
           "name": "height",
-          "ioValue": 20,
-          "currentEquation": "20"
+          "ioValue": 20
         }
       ]
     },
     {
-      "atomType": "Box",
-      "x": 0.37396242900830057,
-      "y": 0.8263069139966273,
-      "uniqueID": "id-46"
+      "atomType": "Export",
+      "x": 0.6474442988204455,
+      "y": 0.3372681281618887,
+      "uniqueID": "id-78",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STL",
+          "currentEquation": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "z-measure",
+          "currentEquation": "z-measure"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "z-measure"
     }
   ],
   "allConnectors": [
@@ -133,14 +152,9 @@
       "ap2ID": "id-9"
     },
     {
-      "ap2Name": "geometry2",
+      "ap2Name": "geometry1",
       "ap1ID": "id-9",
       "ap2ID": "id-32"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-13",
-      "ap2ID": "id-16"
     },
     {
       "ap2Name": "geometry",
@@ -148,11 +162,25 @@
       "ap2ID": "id-40"
     },
     {
-      "ap2Name": "geometry1",
+      "ap2Name": "geometry2",
       "ap1ID": "id-16",
       "ap2ID": "id-32"
     },
-    null
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-32",
+      "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-32",
+      "ap2ID": "id-78"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-40",
+      "ap2ID": "id-16"
+    }
   ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
